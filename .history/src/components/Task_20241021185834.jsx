@@ -7,7 +7,7 @@ function Task({ task, index, toggleTaskDone, deleteTask }) {
       <input
         type="checkbox"
         checked={task.completed}
-        onChange={() => toggleTaskDone(index)}
+        onChange={() => toggleTaskCompletion(index)}
       />
       <span className={styles.taskText}>{task.name}</span>
 

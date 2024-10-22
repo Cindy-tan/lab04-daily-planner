@@ -1,13 +1,13 @@
 import React from 'react';
 import styles from './Task.module.css'
 
-function Task({ task, index, toggleTaskDone, deleteTask }) {
+function Task({ task, index, toggleTaskD, deleteTask }) {
   return (
     <li style={{ textDecoration: task.completed ? 'line-through' : 'none' }} className={styles.list}>
       <input
         type="checkbox"
         checked={task.completed}
-        onChange={() => toggleTaskDone(index)}
+        onChange={() => toggleTaskCompletion(index)}
       />
       <span className={styles.taskText}>{task.name}</span>
 

@@ -9,7 +9,7 @@ function DayPlannerApp() {
     setTasks([...tasks, { name: taskName, completed: false }]);
   };
 
-  const toggleTaskDone = (index) => {
+  const toggleTaskCompletion = (index) => {
     const updatedTasks = tasks.map((task, i) =>
       i === index ? { ...task, completed: !task.completed } : task
     );
@@ -35,7 +35,7 @@ function DayPlannerApp() {
             key={index}
             task={task}
             index={index}
-            toggleTaskDone={toggleTaskDone}
+            toggleTaskCompletion={toggleTaskCompletion}
             deleteTask={deleteTask}
           />
         ))}

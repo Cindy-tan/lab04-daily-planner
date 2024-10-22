@@ -35,7 +35,7 @@ function DayPlannerApp() {
             key={index}
             task={task}
             index={index}
-            toggleTaskDone={toggleTaskDone}
+            toggleTaskCompletion={toggleTaskDone}
             deleteTask={deleteTask}
           />
         ))}
