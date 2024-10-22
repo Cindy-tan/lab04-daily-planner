@@ -5,6 +5,11 @@
   align-items: center;
   padding: 10px;
   margin-right: 40%;
+  text-decoration: none;
+}
+
+.done {
+  text-decoration: overline;
 }
 
 .removeBtn {

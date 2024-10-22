@@ -16,7 +16,7 @@ function TaskForm({ addTask }) {
     <form onSubmit={handleSubmit}>
       <input
         type="text"
-        placeholder="new task ..."
+        placeholder="Enter a new task"
         value={taskName}
         onChange={(e) => setTaskName(e.target.value)}
         className={styles.placeholder}
